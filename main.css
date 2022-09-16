@@ -1,0 +1,36 @@
+body{
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+#canvas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.square{
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;   
+    outline: black solid;
+    background-color: white;
+}
+
+.square:hover {
+    background-color: aquamarine;
+}
+
+.color{
+    background-color: black;
+}
+
+button{
+    background-color:burlywood;
+    
+}
