@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pixelate</title>
     <link rel="stylesheet" href="main.css">
 
 </head>
+
 <body>
-    <div> 
-        <h1>pixeled</h1>
+    <div>
+        <h1>pixelate</h1>
     </div>
-    <div id = 'canvas'>
-        <div id = 'type' style="background-color:blue"> </div>
+    <div class='canvasContainer'>
+        <div id='canvas'></div>
     </div>
-    <div> 
-        <button>upload image</button>
-        <button>set array</button>
+
+    <div>
+        <input type="range" min='10' max='50' value='0' class='slider' id='Xrange'>
+        <input type="range" min='10' max='20' value='0' class='slider' id='Yrange'>
     </div>
-    <script src = 'index.js'></script>
+
+
+    <div>
+        <button id='erase'>erase</button>
+        <button id='reset'>reset</button>
+        <button id="randomColors">random colors</button>
+    </div>
+    <script src='index.js'></script>
 </body>
+
 </html>

@@ -1,24 +1,30 @@
 body{
-    background-color: lightyellow;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:10px;
 }
-
+h1{
+    color: lightslategrey;
+}
 #canvas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    outline: solid black;
 }
 
 .square{
     flex: 0 0 auto;
     width: 10px;
     height: 10px;   
-    outline: black solid;
+    outline: lightcyan solid;
+    background-color: white;
+}
+
+.white{
     background-color: white;
 }
 
@@ -32,5 +38,18 @@ body{
 
 button{
     background-color:burlywood;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+}
+
+#midSection{
+    display: flex;
     
+}
+
+.canvasContainer{
+    width:auto;
+    height:200px;
+
 }
