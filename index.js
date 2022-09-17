@@ -143,11 +143,22 @@ function coloring(e) {
 
 
 function makeMoreGray(e) {
-    let n = Number(e.style.backgroundColor.replace(/\D/g,'')); 
-    let color_init = n % 1000;
-    gunit = color_init - 20; 
-    e.style.backgroundColor = 'rgb(' + gunit.toString() + ','+ gunit.toString() + ','+ gunit.toString() + ')';
-    console.log(e.style.backgroundColor);
+    let color_init = e.style.backgroundColor;
+    let str = '';
+    for(let i = 0; i < color_init.length; i++){
+            if(!isNaN(color_init[i]) && str.length <=3){
+                str+=color_init[i];
+            }
+    }
+    color = Number(str);
+    while(color> 0){
+        color_grayed= color - 40;
+        e.style.backgroundColor = 'rgb(' + color_grayed.toString() + ',' + color_grayed.toString() + ',' + color_grayed.toString() + ')';
+        console.log(e.style.backgroundColor);
+        return;
+    }
+    e.style.backgroundColor = 'rgb(0,0,0)';
+    return;
 }
 
 function resetall() {
@@ -157,6 +168,6 @@ function resetall() {
     });
 }
 
-function RGBtoArray(){
+function RGBtoArray() {
 
 }
