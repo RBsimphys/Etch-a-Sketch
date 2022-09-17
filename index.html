@@ -18,17 +18,20 @@
         <div id='canvas'></div>
     </div>
 
-    <div>
+    <div id = 'gridSelector'>
+        <span id = 'output'>10 x 10</span>
         <input type="range" min='10' max='50' value='0' class='slider' id='Xrange'>
-        <input type="range" min='10' max='20' value='0' class='slider' id='Yrange'>
     </div>
 
 
     <div>
-        <button id='erase'>erase</button>
         <button id='reset'>reset</button>
+        <button id='erase'>erase</button>
+        <button id='gray'>gray</button>
         <button id="randomColors">random colors</button>
     </div>
+    <input type="color" id="colorpicker-control">
+
     <script src='index.js'></script>
 </body>
 
